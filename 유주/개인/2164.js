@@ -12,11 +12,11 @@ const arr = Array.from(
 ).reverse();
 
 // 시간 초과 => shift 때문
-// while (arr.length > 1) {
-//   arr.shift();
-//   arr.push(arr.shift());
-// }
-// console.log(arr[0]);
+while (arr.length > 1) {
+  arr.shift();
+  arr.push(arr.shift());
+}
+console.log(arr[0]);
 
 function findResult(arr) {
   const reArr = [];

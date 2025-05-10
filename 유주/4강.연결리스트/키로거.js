@@ -1,6 +1,8 @@
 const fs = require("fs");
 const input = fs.readFileSync("input.txt").toString().trim().split("\n");
 
+// /^[a-zA-Z0-9]$/.test() => 정규식으로 문자.숫자만 판별하기
+
 const passwordList = input.slice(1);
 
 for (let password of passwordList) {
